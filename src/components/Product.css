@@ -1,0 +1,153 @@
+.product-card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-card img {
+    height: 200px;
+    object-fit: contain;
+  }
+  
+  .product-card .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product-card .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .product-card .card-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .product-card .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .product-card .btn-secondary {
+    background-color: #6c757d;
+    border: none;
+  }
+  .counter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.counter-button {
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.counter-display {
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+}
+
+/* CSS for ProductNavbar */
+
+.navbar {
+  height: 80px; /* Reduced height */
+  padding: 0 10px; /* Reduced padding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem; /* Adjusted font size */
+}
+
+.nav-link {
+  transition: color 0.3s ease;
+  font-size: 1rem; /* Adjusted font size */
+}
+
+.nav-link:hover {
+  color: #f8f9fa !important;
+}
+
+.search-form .form-control {
+  width: 300px; /* Adjusted width */
+  height: 30px; /* Adjusted height */
+  border-radius: 0.25rem;
+}
+
+.search-form .btn-outline-success {
+  height: 30px; /* Adjusted height */
+  border-radius: 0.25rem;
+}
+
+.position-relative .badge {
+  font-size: 0.55rem;
+  padding: 0.25em 0.5em; /* Adjusted padding */
+}
+
+.text-hover-blue {
+  color: white;
+  transition: color 0.3s;
+}
+
+.text-hover-blue:hover {
+  color: #007bff; /* Blue color */
+}
+
+/* css for categorybar */
+.category-bar {
+  margin-top: 90px; /* Adjust this value based on the height of your navbar */
+ height: 50px;
+}
+.category-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.category-link:hover {
+  transform: scale(1.1);
+  color: #007bff;
+}
+
+.category-icon {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s;
+  height: 15px;
+ 
+}
+
+.category-link:hover .category-icon {
+  color: #007bff;
+}
+.loading-message {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 2rem;
+  color: #007bff; /* Blue color */
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
